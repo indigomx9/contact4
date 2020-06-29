@@ -3,6 +3,8 @@ import morgan from "morgan";
 import helmet from "helmet";
 import mongoose from "mongoose";
 import { userRt } from "./routes/userRt";
+import { authRt } from "./routes/authRt";
+import { contactsRt } from "./routes/contactsRt";
 import { config } from "./config/keys";
 import { notFoundError, errorHandler } from "./middleware/ErrorMiddleware";
 
@@ -34,6 +36,8 @@ import { notFoundError, errorHandler } from "./middleware/ErrorMiddleware";
     app.use(morgan("dev"));
     app.use(express.json());
     app.use("/api/users", userRt);
+    app.use("/api/auth", authRt);
+    app.use("/api/contacts", contactsRt);
     app.use(notFoundError, errorHandler);
 
     const port = process.env.PORT || 9000;
