@@ -2,7 +2,11 @@
   "name": "contact4",
   "version": "1.0.0",
   "description": "",
-  "babel": {"presets": ["@babel/preset-env"]},
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --exec babel-node src/index.js",
@@ -28,5 +32,3 @@
     "nodemon": "^2.0.4"
   }
 }
-
-

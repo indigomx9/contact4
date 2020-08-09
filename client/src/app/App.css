@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+
+/* Global Styles */
+:root {
+    --primary-color: #003699;
+    --dark-color: #333333;
+    --light-color: #f4f4f4;
+    --danger-color: #dc3545;
+    --success-color: #28a745;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #fac9b8;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
